@@ -24,8 +24,6 @@ namespace Backend.Models
         }
         public bool AddContact(ContactDto contact)
         {
-            //validate the corectness of data
-
             //check if user with given email is not already present in the database
             if(_dbService.GetContact(contact.Email)  == null)
             {
